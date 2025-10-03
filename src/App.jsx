@@ -69,7 +69,7 @@ function App() {
 
 
   {/* Spending Info */}
-<div className="px-4 py-3 mt-5 bg-white shadow" style={{ border: '1px solid #E5E7EB', marginLeft: '16px', marginRight: '16px' }}>
+<div className="px-4 py-3 mt-5 bg-white shadow rounded-lg" style={{ border: '1px solid #E5E7EB', marginLeft: '16px', marginRight: '16px', borderRadius: '0rem' }}>
   <div className="flex justify-between items-start">
     {/* Left */}
     <div>
