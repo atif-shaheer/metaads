@@ -2,7 +2,16 @@ import { Bell, Plus, Search, Grid, MoreVertical, Settings, ChevronDown } from "l
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen bg-gray-100 relative pb-14">
+    <div className="min-h-screen relative pb-14"    style={{
+    background: `linear-gradient(
+      90deg,
+      rgba(255, 240, 240, 0.6) 20%,
+      rgba(255, 245, 245, 0.4) 35%,
+      rgba(240, 245, 255, 0.8) 70%,
+      rgba(240, 245, 255, 1) 100%
+    )`
+  }}
+ >
 
 {/* Account Info (Transparent Fixed Header) */}
 <div className="fixed top-0 left-0 right-0 px-4 pt-4 pb-2 z-20 pointer-events-none backdrop-blur-md bg-white/40">
