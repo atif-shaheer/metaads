@@ -1,4 +1,4 @@
-import { Bell, Plus, Search, Grid, Home, Lightbulb, HelpCircle, MoreVertical, Settings, ChevronDown } from "lucide-react";
+import { Bell, Plus, Search, Grid, MoreVertical, Settings, ChevronDown } from "lucide-react";
 
 export default function Dashboard() {
   return (
