@@ -147,9 +147,9 @@ function App() {
       </div>
 
       {/* Campaign List */}
-      <div className="space-y-2 px-4 mt-2" style={{ borderRadius: '0rem' }}>
+      <div className="space-y-2 px-4 mt-2">
         {/* Campaign Item */}
-        <div className="bg-white shadow rounded-lg p-3 relative">
+        <div className="bg-white shadow rounded-lg p-3 relative" style={{ borderRadius: '0rem' }}>
           <div className="flex justify-between items-start">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 bg-gray-200 rounded overflow-hidden">
