@@ -171,31 +171,31 @@ export default function Dashboard() {
               </div>
               <MoreVertical className="w-5 h-5 text-gray-500" />
             </div>
-<div className="flex justify-between mt-3">
-  {/* Column 1 */}
-  <div className="flex flex-col items-center flex-1">
-    <p className="font-bold">56</p>
-    <p className="text-sm text-gray-500">Website Subscribes</p>
-  </div>
+            <div className="flex justify-between mt-3">
+              {/* Column 1 */}
+              <div className="flex flex-col items-center flex-1">
+                <p className="font-bold">56</p>
+                <p className="text-sm text-gray-500">Website Subscribes</p>
+              </div>
 
-  {/* Vertical line between 1 and 2 */}
-  <div className="border-l border-gray-300 mx-4"></div>
+              {/* Vertical line between 1 and 2 */}
+              <div className="border-l border-gray-300 mx-4"></div>
 
-  {/* Column 2 */}
-  <div className="flex flex-col items-center flex-1">
-    <p className="font-bold">₹11.82</p>
-    <p className="text-sm text-gray-500">Cost per Website Subscribe</p>
-  </div>
+              {/* Column 2 */}
+              <div className="flex flex-col items-center flex-1">
+                <p className="font-bold">₹11.82</p>
+                <p className="text-sm text-gray-500">Cost per Website Subscribe</p>
+              </div>
 
-  {/* Vertical line between 2 and 3 */}
-  <div className="border-l border-gray-300 mx-4"></div>
+              {/* Vertical line between 2 and 3 */}
+              <div className="border-l border-gray-300 mx-4"></div>
 
-  {/* Column 3 */}
-  <div className="flex flex-col items-center flex-1">
-    <p className="font-bold">₹662.14</p>
-    <p className="text-sm text-gray-500">Spent</p>
-  </div>
-</div>
+              {/* Column 3 */}
+              <div className="flex flex-col items-center flex-1">
+                <p className="font-bold">₹662.14</p>
+                <p className="text-sm text-gray-500">Spent</p>
+              </div>
+            </div>
 
           </div>
         </div>
