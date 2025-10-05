@@ -93,7 +93,6 @@ export default function Dashboard() {
             <div className="text-right">
               <p className="text-gray-500 text-sm">Spending limit</p>
               <div className="flex items-center justify-end gap-1 mt-1">
-                {/* Small red dot like image */}
                 <span className="w-2 h-2 bg-red-500 rounded-full"></span>
                 <p className="text-red-500 text-sm font-medium">
                   152.58 remaining
