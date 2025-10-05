@@ -86,7 +86,7 @@ export default function Dashboard() {
             {/* Left */}
             <div>
               <p className="text-gray-500 text-sm">Total amount spent</p>
-              <h2 className="text-2xl font-bold">₹142,923.90</h2>
+              <h2 className="text-2xl font-bold" style={{ fontSize: '1.2rem' }}>₹142,923.90</h2>
             </div>
 
             {/* Right */}
@@ -96,7 +96,7 @@ export default function Dashboard() {
                 {/* Small red dot like image */}
                 <span className="w-2 h-2 bg-red-500 rounded-full"></span>
                 <p className="text-red-500 text-sm font-medium">
-                  Account spending limit reached
+                  152.58 remaining
                 </p>
               </div>
             </div>
@@ -171,20 +171,32 @@ export default function Dashboard() {
               </div>
               <MoreVertical className="w-5 h-5 text-gray-500" />
             </div>
-            <div className="flex justify-between mt-3">
-              <div>
-                <p className="font-bold">56</p>
-                <p className="text-sm text-gray-500">Website Subscribes</p>
-              </div>
-              <div>
-                <p className="font-bold">₹11.82</p>
-                <p className="text-sm text-gray-500">Cost per Website Subscribe</p>
-              </div>
-              <div>
-                <p className="font-bold">₹662.14</p>
-                <p className="text-sm text-gray-500">Spent</p>
-              </div>
-            </div>
+<div className="flex justify-between mt-3">
+  {/* Column 1 */}
+  <div className="flex flex-col items-center flex-1">
+    <p className="font-bold">56</p>
+    <p className="text-sm text-gray-500">Website Subscribes</p>
+  </div>
+
+  {/* Vertical line between 1 and 2 */}
+  <div className="border-l border-gray-300 mx-4"></div>
+
+  {/* Column 2 */}
+  <div className="flex flex-col items-center flex-1">
+    <p className="font-bold">₹11.82</p>
+    <p className="text-sm text-gray-500">Cost per Website Subscribe</p>
+  </div>
+
+  {/* Vertical line between 2 and 3 */}
+  <div className="border-l border-gray-300 mx-4"></div>
+
+  {/* Column 3 */}
+  <div className="flex flex-col items-center flex-1">
+    <p className="font-bold">₹662.14</p>
+    <p className="text-sm text-gray-500">Spent</p>
+  </div>
+</div>
+
           </div>
         </div>
       </div>
