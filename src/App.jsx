@@ -20,13 +20,13 @@ function App() {
         {/* Bottom Nav */}
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around py-2">
           <Link to="/">
-            <Home className="w-6 h-6 text-gray-600" />
+            <Home className="w-6 h-6 text-gray-800" />
           </Link>
           <Link to="/ideas">
-            <Lightbulb className="w-6 h-6 text-gray-600" />
+            <Lightbulb className="w-6 h-6 text-gray-800" />
           </Link>
           <Link to="/help">
-            <HelpCircle className="w-6 h-6 text-gray-600" />
+            <HelpCircle className="w-6 h-6 text-gray-800" />
           </Link>
         </div>
       </div>
