@@ -115,19 +115,16 @@ export default function Dashboard() {
             <p className="text-gray-500 text-sm mb-1">Opportunity score</p>
 
             <div className="flex items-center gap-3">
-              {/* Half-circle SVG */}
-              <div className="relative w-14 h-7">
-                <svg className="w-14 h-7" viewBox="0 0 100 50">
-                  <path
-                    d="M10,50 A40,40 0 0,1 90,50"
-                    fill="none"
-                    stroke="#34D399"
-                    strokeWidth="8"
-                    strokeLinecap="round"
-                  />
-                </svg>
-                {/* Score number inside semicircle */}
-
+                      <div className="relative w-14 h-7">
+                      <svg className="w-14 h-7" viewBox="0 0 100 50">
+                        <path
+                        d="M10,50 A40,40 0 0,1 90,50"
+                        fill="none"
+                        stroke="#2563eb"
+                        strokeWidth="8"
+                        strokeLinecap="round"
+                        />
+                      </svg>
               </div>
               <div className="inset-0 flex items-center justify-center -translate-y-1">
                 <h2 className="text-base font-semibold">100 <small>points</small></h2>
