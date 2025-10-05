@@ -51,18 +51,18 @@ export default function Dashboard() {
               </span>
             </div>
 
-            <button 
-            onClick={() => setShowModal(true)}
-            className="w-10 h-10 rounded-full bg-green-800 flex items-center justify-center shadow-md">
+            <button
+              onClick={() => setShowModal(true)}
+              className="w-10 h-10 rounded-full bg-green-800 flex items-center justify-center shadow-md">
               <Plus className="w-5 h-5 text-white" />
             </button>
           </div>
 
-      {/* Modal */}
-      <AddCampaignModal
-        isOpen={showModal}
-        onClose={() => setShowModal(false)}
-      />
+          {/* Modal */}
+          <AddCampaignModal
+            isOpen={showModal}
+            onClose={() => setShowModal(false)}
+          />
 
         </div>
       </div>
