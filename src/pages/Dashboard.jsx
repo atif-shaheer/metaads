@@ -2,58 +2,58 @@ import { Bell, Plus, Search, Grid, MoreVertical, Settings, ChevronDown } from "l
 
 export default function Dashboard() {
   return (
-    <div className="min-h-screen relative pb-14"    style={{
-    background: `linear-gradient(
+    <div className="min-h-screen relative pb-14" style={{
+      background: `linear-gradient(
       90deg,
       rgba(255, 240, 240, 0.6) 20%,
       rgba(255, 245, 245, 0.4) 35%,
       rgba(240, 245, 255, 0.8) 70%,
       rgba(240, 245, 255, 1) 100%
     )`
-  }}
- >
+    }}
+    >
 
-{/* Account Info (Transparent Fixed Header) */}
-<div className="fixed top-0 left-0 right-0 px-4 pt-4 pb-2 z-20 pointer-events-none backdrop-blur-md bg-white/40">
-  <div className="flex items-start justify-between pointer-events-auto">
-    {/* left: avatar + name */}
-    <div className="flex items-center gap-3">
-      {/* avatar circular */}
-      <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
-        <Settings className="w-6 h-6 text-gray-600" />
-      </div>
+      {/* Account Info (Transparent Fixed Header) */}
+      <div className="fixed top-0 left-0 right-0 px-4 pt-4 pb-2 z-20 pointer-events-none backdrop-blur-md bg-white/40">
+        <div className="flex items-start justify-between pointer-events-auto">
+          {/* left: avatar + name */}
+          <div className="flex items-center gap-3">
+            {/* avatar circular */}
+            <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
+              <Settings className="w-6 h-6 text-gray-600" />
+            </div>
 
-      {/* name + subtitle */}
-      <div>
-        <div className="flex items-center gap-2">
-          <h2 className="text-2xl font-semibold leading-5">badshah dubai</h2>
-          <ChevronDown className="w-4 h-4 text-gray-500" />
+            {/* name + subtitle */}
+            <div>
+              <div className="flex items-center gap-2">
+                <h2 className="text-2xl font-semibold leading-5">badshah dubai</h2>
+                <ChevronDown className="w-4 h-4 text-gray-500" />
+              </div>
+
+              <div className="flex items-center gap-2 mt-1">
+                {/* small red status dot */}
+                <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
+                <p className="text-sm text-gray-500">9 active campaign</p>
+              </div>
+            </div>
+          </div>
+
+          {/* right: bell + plus */}
+          <div className="flex items-center gap-3">
+            <div className="relative">
+              <Bell className="w-6 h-6 text-gray-700" />
+              {/* red notification badge */}
+              <span className="absolute -top-1 -right-2 bg-red-600 text-white text-xs font-semibold rounded-full px-1 leading-none">
+                8
+              </span>
+            </div>
+
+            <button className="w-10 h-10 rounded-full bg-green-800 flex items-center justify-center shadow-md">
+              <Plus className="w-5 h-5 text-white" />
+            </button>
+          </div>
         </div>
-
-        <div className="flex items-center gap-2 mt-1">
-          {/* small red status dot */}
-          <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
-          <p className="text-sm text-gray-500">9 active campaign</p>
-        </div>
       </div>
-    </div>
-
-    {/* right: bell + plus */}
-    <div className="flex items-center gap-3">
-      <div className="relative">
-        <Bell className="w-6 h-6 text-gray-700" />
-        {/* red notification badge */}
-        <span className="absolute -top-1 -right-2 bg-red-600 text-white text-xs font-semibold rounded-full px-1 leading-none">
-          8
-        </span>
-      </div>
-
-      <button className="w-10 h-10 rounded-full bg-green-800 flex items-center justify-center shadow-md">
-        <Plus className="w-5 h-5 text-white" />
-      </button>
-    </div>
-  </div>
-</div>
 
       {/* Content wrapper (add padding-top to avoid overlap with fixed header) */}
       <div className="pt-20">
@@ -113,18 +113,17 @@ export default function Dashboard() {
           <div>
             {/* Label on top */}
             <p className="text-gray-500 text-sm mb-1">Opportunity score</p>
-
             <div className="flex items-center gap-3">
-                      <div className="relative w-14 h-7">
-                      <svg className="w-14 h-7" viewBox="0 0 100 50">
-                        <path
-                        d="M10,50 A40,40 0 0,1 90,50"
-                        fill="none"
-                        stroke="#2563eb"
-                        strokeWidth="8"
-                        strokeLinecap="round"
-                        />
-                      </svg>
+              <div className="relative w-14 h-7">
+                <svg className="w-14 h-7" viewBox="0 0 100 50">
+                  <path
+                    d="M10,50 A40,40 0 0,1 90,50"
+                    fill="none"
+                    stroke="#2563eb"
+                    strokeWidth="8"
+                    strokeLinecap="round"
+                  />
+                </svg>
               </div>
               <div className="inset-0 flex items-center justify-center -translate-y-1">
                 <h2 className="text-base font-semibold">100 <small>points</small></h2>
