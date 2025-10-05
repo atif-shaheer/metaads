@@ -26,14 +26,14 @@ export default function Dashboard() {
       {/* name + subtitle */}
       <div>
         <div className="flex items-center gap-2">
-          <h2 className="text-lg font-semibold leading-5">badshah dubai</h2>
+          <h2 className="text-2xl font-semibold leading-5">badshah dubai</h2>
           <ChevronDown className="w-4 h-4 text-gray-500" />
         </div>
 
         <div className="flex items-center gap-2 mt-1">
           {/* small red status dot */}
-          <span className="w-2 h-2 rounded-full bg-red-500 inline-block" />
-          <p className="text-sm text-gray-500">Spend limit reached</p>
+          <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
+          <p className="text-sm text-gray-500">9 active campaign</p>
         </div>
       </div>
     </div>
