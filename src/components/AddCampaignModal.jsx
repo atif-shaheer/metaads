@@ -4,7 +4,7 @@ export default function AddCampaignModal({ isOpen, onClose }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50" style={{ marginTop: '10rem' }}>
+    <div className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50" style={{ marginTop: '18rem' }}>
       <div className="bg-white rounded-lg p-6 w-11/12 max-w-md shadow-lg relative">
         {/* Close Button */}
         <button
@@ -33,6 +33,31 @@ export default function AddCampaignModal({ isOpen, onClose }) {
               type="number"
               className="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
               placeholder="Enter budget amount"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm text-gray-600 mb-1">To Date</label>
+            <input
+              type="date"
+              className="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm text-gray-600 mb-1">From Date</label>
+            <input
+              type="date"
+              className="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
+            />
+          </div>
+
+          <div>
+            <label className="block text-sm text-gray-600 mb-1">Link</label>
+            <input
+              type="text"
+              className="w-full border rounded px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"
+              placeholder="Enter Link"
             />
           </div>
 
