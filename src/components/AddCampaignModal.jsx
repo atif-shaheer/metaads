@@ -14,9 +14,12 @@ export default function AddCampaignModal({ isOpen, onClose }) {
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-center z-50"
+      className="fixed inset-0 bg-black bg-opacity-40 flex justify-center items-end z-50 transition-all duration-300"
     >
-      <div className="bg-white rounded-lg p-6 w-11/12 max-w-md shadow-lg relative">
+      {/* Modal Container (slide-up animation + scrollable content) */}
+      <div
+        className="bg-white rounded-t-2xl p-6 w-full max-w-md shadow-xl relative transform transition-all duration-300 translate-y-0 animate-slideUp overflow-y-auto max-h-[85vh]"
+      >
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -25,10 +28,10 @@ export default function AddCampaignModal({ isOpen, onClose }) {
           ✕
         </button>
 
-        <h2 className="text-xl font-semibold mb-4">Add New Campaign</h2>
+        <h2 className="text-xl font-semibold mb-4 text-center">Add New Campaign</h2>
 
         {/* Form */}
-        <form className="space-y-4">
+        <form className="space-y-4 pb-4">
           {/* Campaign Name */}
           <div>
             <label className="block text-sm text-gray-600 mb-1">Campaign Name</label>
@@ -78,9 +81,7 @@ export default function AddCampaignModal({ isOpen, onClose }) {
 
           {/* Video Upload */}
           <div>
-            <label className="block text-sm text-gray-600 mb-1">
-              Upload Video
-            </label>
+            <label className="block text-sm text-gray-600 mb-1">Upload Video</label>
             <input
               type="file"
               accept="video/*"
@@ -109,6 +110,21 @@ export default function AddCampaignModal({ isOpen, onClose }) {
           </button>
         </form>
       </div>
+
+      {/* Slide-up animation keyframes */}
+      <style>{`
+        @keyframes slideUp {
+          from {
+            transform: translateY(100%);
+          }
+          to {
+            transform: translateY(0);
+          }
+        }
+        .animate-slideUp {
+          animation: slideUp 0.4s ease-out;
+        }
+      `}</style>
     </div>
   );
 }

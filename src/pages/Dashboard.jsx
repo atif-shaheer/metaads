@@ -57,16 +57,13 @@ export default function Dashboard() {
               <Plus className="w-5 h-5 text-white" />
             </button>
           </div>
-
+        </div>
+      </div>
           {/* Modal */}
           <AddCampaignModal
             isOpen={showModal}
             onClose={() => setShowModal(false)}
           />
-
-        </div>
-      </div>
-
       {/* Content wrapper (add padding-top to avoid overlap with fixed header) */}
       <div className="pt-20">
         {/* Filters */}
