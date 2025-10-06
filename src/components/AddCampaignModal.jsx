@@ -2,15 +2,51 @@ import React, { useState } from "react";
 
 export default function AddCampaignModal({ isOpen, onClose }) {
   const [videoPreview, setVideoPreview] = useState(null);
+  // inside AddCampaignModal component (excerpt)
+  const [campaignName, setCampaignName] = useState('');
+  const [budget, setBudget] = useState('');
+  const [fromDate, setFromDate] = useState('');
+  const [toDate, setToDate] = useState('');
+  const [link, setLink] = useState('');
+  const [videoFile, setVideoFile] = useState(null);
 
-  if (!isOpen) return null;
-
+  // change your file input: add name="video"
   const handleVideoChange = (e) => {
     const file = e.target.files[0];
     if (file) {
       setVideoPreview(URL.createObjectURL(file));
+      setVideoFile(file);
     }
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+    formData.append('campaignName', campaignName);
+    formData.append('budget', budget);
+    formData.append('fromDate', fromDate);
+    formData.append('toDate', toDate);
+    formData.append('link', link);
+    if (videoFile) formData.append('video', videoFile);
+
+    try {
+      const res = await fetch('http://localhost:5000/api/campaigns', {
+        method: 'POST',
+        body: formData
+      });
+      if (!res.ok) throw new Error('Network response not ok');
+      const data = await res.json();
+      console.log('Saved:', data);
+      // reset fields / close modal / refresh list as needed
+      onClose();
+    } catch (err) {
+      console.error('Submit error:', err);
+      alert('Error saving campaign');
+    }
+  };
+
+  if (!isOpen) return null;
 
   return (
     <div
