@@ -1,9 +1,6 @@
 import { Bell, Plus, Search, Grid, MoreVertical, Settings, ChevronDown, ChevronRight } from "lucide-react";
-import React, { useState } from "react";
-import AddCampaignModal from "../components/AddCampaignModal";
 
 export default function Dashboard() {
-  const [showModal, setShowModal] = useState(false);
   return (
     <div className="min-h-screen relative pb-14" style={{
       background: `linear-gradient(
@@ -104,11 +101,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Modal */}
-      <AddCampaignModal
-        isOpen={showModal}
-        onClose={() => setShowModal(false)}
-      />
+
       {/* Content wrapper (add padding-top to avoid overlap with fixed header) */}
       <div style={{ paddingTop: '8.5rem' }}>
         {/* Spending Info */}
