@@ -17,18 +17,21 @@ function App() {
           <Route path="/help" element={<Help />} />
         </Routes>
 
-        {/* Bottom Nav */}
-        <div className="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around py-2">
-          <Link to="/">
-            <Home className="w-6 h-6 text-gray-800" />
-          </Link>
-          <Link to="/ideas">
-            <Lightbulb className="w-6 h-6 text-gray-800" />
-          </Link>
-          <Link to="/help">
-            <HelpCircle className="w-6 h-6 text-gray-800" />
-          </Link>
-        </div>
+{/* Bottom Nav */}
+<div className="fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around items-center py-4 shadow-lg z-50">
+  <Link to="/" className="flex flex-col items-center text-gray-800 hover:text-green-700 transition-colors">
+    <Home className="w-8 h-8" />
+  </Link>
+
+  <Link to="/ideas" className="flex flex-col items-center text-gray-800 hover:text-green-700 transition-colors">
+    <Lightbulb className="w-8 h-8" />
+  </Link>
+
+  <Link to="/help" className="flex flex-col items-center text-gray-800 hover:text-green-700 transition-colors">
+    <HelpCircle className="w-8 h-8" />
+  </Link>
+</div>
+
       </div>
     </Router>
   );
