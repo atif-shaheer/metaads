@@ -140,7 +140,9 @@ export default function Dashboard() {
         {/* Opportunity */}
         <div
           className="px-4 py-3 mt-3 bg-white shadow rounded-lg flex justify-between items-center"
-          style={{ border: "1px solid #E5E7EB", marginLeft: "16px", marginRight: "16px", borderRadius: '0rem' }}
+          style={{ border: "1px solid #E5E7EB", marginLeft: "16px", marginRight: "16px", borderRadius: '0rem',
+            paddingTop: '1rem', paddingBottom: '1rem'
+           }}
         >
           {/* Left: Label + Half-circle */}
           <div>
