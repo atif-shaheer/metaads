@@ -53,8 +53,8 @@ export default function Dashboard() {
 
             <button
               onClick={() => setShowModal(true)}
-              className="w-10 h-10 rounded-full bg-green-800 flex items-center justify-center shadow-md">
-              <Plus className="w-5 h-5 text-white" style={{ width: '2rem', height: '2rem' }} />
+              className="w-10 h-10 rounded-full bg-green-800 flex items-center justify-center shadow-md" style={{ width: '2.5rem', height: '2.5rem' }}>
+              <Plus className="w-5 h-5 text-white" />
             </button>
           </div>
         </div>
