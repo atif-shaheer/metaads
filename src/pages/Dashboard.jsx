@@ -36,7 +36,7 @@ export default function Dashboard() {
               </div>
 
               <div className="flex items-center gap-2 mt-1">
-                <span className="w-2.5 h-2.5 rounded-full bg-green-800 inline-block" />
+                <span className="w-2.5 h-2.5 rounded-full bg-green-600 inline-block" />
                 <p className="text-sm text-gray-500">9 active campaign</p>
               </div>
             </div>
