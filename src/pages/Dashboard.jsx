@@ -49,7 +49,7 @@ export default function Dashboard() {
     <div className="flex items-center gap-3">
       <div className="relative">
         <Bell className="text-gray-700" style={{ width: '2.2rem', height: '2.2rem' }} />
-        <span className="absolute -top-1 -right-2 bg-red-600 text-white text-xs font-semibold rounded-full px-1 leading-none">
+        <span style={{ fontSize: '1.3rem' }} className="absolute -top-1 -right-2 bg-red-600 text-white text-xs font-semibold rounded-full px-1 leading-none">
           8
         </span>
       </div>
