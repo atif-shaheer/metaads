@@ -184,7 +184,7 @@ export default function Dashboard() {
           {/* Right: Recommendations */}
 
           <div className=" inset-0 flex items-center justify-center -translate-y-1">
-            <h4 className="text-base font-semibold">0 <small>recommendations</small></h4>
+            <h2 className="text-base font-semibold" style={{ fontSize: '1rem' }}>0 <small>recommendations</small></h2>
           </div>
 
           {/* <p className="text-gray-600 flex items-center gap-2">
