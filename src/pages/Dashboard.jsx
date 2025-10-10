@@ -1,4 +1,4 @@
-import { Bell, Plus, Search, Grid, MoreVertical, Settings, ChevronDown } from "lucide-react";
+import { Bell, Plus, Search, Grid, MoreVertical, Settings, ChevronDown, ChevronRight } from "lucide-react";
 import React, { useState } from "react";
 import AddCampaignModal from "../components/AddCampaignModal";
 
@@ -112,29 +112,43 @@ export default function Dashboard() {
       {/* Content wrapper (add padding-top to avoid overlap with fixed header) */}
       <div style={{ paddingTop: '8.5rem' }}>
         {/* Spending Info */}
-        <div className="px-4 mt-5 bg-white shadow rounded-lg" 
-        style={{ border: '1px solid #E5E7EB', marginLeft: '16px', marginRight: '16px', borderRadius: '0rem', 
-          paddingTop: '1rem', paddingBottom: '1rem'
-         }}>
-          <div className="flex justify-between items-start">
-            {/* Left */}
-            <div>
-              <p className="text-gray-500 text-sm">Total amount spent</p>
-              <h2 className="text-2xl font-bold" style={{ fontSize: '1.5rem' }}>₹142,923.90</h2>
-            </div>
+<div
+  className="px-4 mt-5 bg-white shadow rounded-lg flex justify-between items-center cursor-pointer hover:bg-gray-50 transition-all"
+  style={{
+    border: '1px solid #E5E7EB',
+    marginLeft: '16px',
+    marginRight: '16px',
+    borderRadius: '0rem',
+    paddingTop: '1rem',
+    paddingBottom: '1rem'
+  }}
+>
+  {/* Left Section */}
+  <div className="flex-1">
+    <div className="flex justify-between items-start">
+      {/* Left */}
+      <div>
+        <p className="text-gray-500 text-sm">Total amount spent</p>
+        <h2 className="text-2xl font-bold" style={{ fontSize: '1.5rem' }}>₹142,923.90</h2>
+      </div>
 
-            {/* Right */}
-            <div className="text-right">
-              <p className="text-gray-500 text-sm">Spending limit</p>
-              <div className="flex items-center justify-end gap-1 mt-1">
-                <span className="w-2 h-2 bg-red-700 rounded-full"></span>
-                <p className="text-red-700 text-sm font-medium">
-                  <b>152.58 remaining</b>
-                </p>
-              </div>
-            </div>
-          </div>
+      {/* Right */}
+      <div className="text-right">
+        <p className="text-gray-500 text-sm">Spending limit</p>
+        <div className="flex items-center justify-end gap-1 mt-1">
+          <span className="w-2 h-2 bg-red-700 rounded-full"></span>
+          <p className="text-red-700 text-sm font-medium">
+            <b>152.58 remaining</b>
+          </p>
         </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Chevron Right */}
+  <ChevronRight className="w-5 h-5 text-gray-400 ml-3 flex-shrink-0" />
+</div>
+
 
 
         {/* Opportunity */}
@@ -176,6 +190,10 @@ export default function Dashboard() {
             <span className="w-2 h-2 rounded-full bg-gray-400 inline-block"></span>
             0 recommendations
           </p> */}
+
+  {/* Chevron Right */}
+  <ChevronRight className="w-5 h-5 text-gray-400 ml-3 flex-shrink-0" />
+
         </div>
 
         {/* Campaigns */}
