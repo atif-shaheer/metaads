@@ -161,7 +161,7 @@ export default function Dashboard() {
                 </svg>
               </div>
               <div className="inset-0 flex items-center justify-center -translate-y-1">
-                <h2 className="text-base font-semibold">100 <small>points</small></h2>
+                <h2 className="text-base font-semibold" style={{ fontSize: '1.4rem' }}>100 <small>points</small></h2>
               </div>
             </div>
           </div>
@@ -173,10 +173,11 @@ export default function Dashboard() {
           </div>
 
           {/* <p className="text-gray-600 flex items-center gap-2">
-    <span className="w-2 h-2 rounded-full bg-gray-400 inline-block"></span>
-    0 recommendations
-  </p> */}
+            <span className="w-2 h-2 rounded-full bg-gray-400 inline-block"></span>
+            0 recommendations
+          </p> */}
         </div>
+
         {/* Campaigns */}
         <div className="px-4 py-3 mt-2 flex items-center justify-between">
           <h2 className="text-lg font-semibold">Campaigns</h2>
