@@ -137,7 +137,7 @@ export default function Dashboard() {
                 <p className="text-gray-500 text-sm">Spending limit</p>
                 <div className="flex items-center justify-end gap-1 mt-1">
                   <span className="w-2 h-2 bg-red-700 rounded-full"></span>
-                  <p className="text-red-700 text-sm font-medium">
+                  <p className="text-red-700 font-medium">
                     <b>152.58 remaining</b>
                   </p>
                 </div>
