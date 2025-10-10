@@ -230,13 +230,16 @@ export default function Dashboard() {
             <div className="flex justify-between items-start">
               {/* Left: Avatar + Info */}
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
+                <div className="relative w-12 h-12 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
                   <img
                     src="https://via.placeholder.com/60"
                     alt="campaign"
                     className="object-cover w-full h-full"
                   />
+                  {/* Green Active Dot */}
+                  <span className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-green-600 border-2 border-white rounded-full"></span>
                 </div>
+
                 <div>
                   <h3 className="font-bold text-xl leading-tight">Nikh</h3>
                   <p className="text-base text-gray-500"><span style={{ color: 'green', fontWeight: 'bold' }}>Active</span> • Engagement</p>
