@@ -117,7 +117,7 @@ export default function Dashboard() {
             {/* Left */}
             <div>
               <p className="text-gray-500 text-sm">Total amount spent</p>
-              <h2 className="text-2xl font-bold" style={{ fontSize: '1.2rem' }}>₹142,923.90</h2>
+              <h2 className="text-2xl font-bold" style={{ fontSize: '1.5rem' }}>₹142,923.90</h2>
             </div>
 
             {/* Right */}
