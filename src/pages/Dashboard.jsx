@@ -44,7 +44,7 @@ export default function Dashboard() {
           {/* right: bell + plus */}
           <div className="flex items-center gap-3">
             <div className="relative">
-              <Bell className="w-6 h-6 text-gray-700" />
+              <Bell className="w-6 h-6 text-gray-700" style={{ width: '2rem', height: '2rem' }} />
               {/* red notification badge */}
               <span className="absolute -top-1 -right-2 bg-red-600 text-white text-xs font-semibold rounded-full px-1 leading-none">
                 8
@@ -54,7 +54,7 @@ export default function Dashboard() {
             <button
               onClick={() => setShowModal(true)}
               className="w-10 h-10 rounded-full bg-green-800 flex items-center justify-center shadow-md">
-              <Plus className="w-5 h-5 text-white" />
+              <Plus className="w-5 h-5 text-white" style={{ width: '2rem', height: '2rem' }} />
             </button>
           </div>
         </div>
