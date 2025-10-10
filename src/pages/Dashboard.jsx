@@ -23,13 +23,13 @@ export default function Dashboard() {
           <div className="flex items-center gap-3">
             {/* avatar circular */}
             <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
-              <Settings className="w-6 h-6 text-gray-600" />
+              <Settings className="w-6 h-6 text-gray-600" style={{ width: '2rem', height: '2rem' }} />
             </div>
 
             {/* name + subtitle */}
             <div>
               <div className="flex items-center gap-2">
-                <h2 className="text-2xl font-semibold leading-5">badshah dubai</h2>
+                <h2 className="text-2xl font-semibold leading-5" style={{ fontSize: '2rem' }}>badshah dubai</h2>
                 <ChevronDown className="w-4 h-4 text-gray-500" />
               </div>
 
