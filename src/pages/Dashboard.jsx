@@ -67,8 +67,8 @@ export default function Dashboard() {
   {/* Filters */}
   <div className="flex gap-3 px-1 mt-3">
     {/* Filter button */}
-    <button className="flex items-center gap-2 px-4 py-2 border bg-white"
-    style={{ fontSize: '1.2rem', lineHeight: '1.8rem' }}
+    <button className="flex items-center gap-2 px-4 py-2 border bg-white text-base font-medium shadow-sm"
+    style={{ fontSize: '1.3rem', lineHeight: '2rem' }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -87,13 +87,17 @@ export default function Dashboard() {
     </button>
 
     {/* Date */}
-    <button className="flex items-center gap-2 px-4 py-2 border bg-white text-base font-medium shadow-sm">
+    <button className="flex items-center gap-2 px-4 py-2 border bg-white text-base font-medium shadow-sm"
+    style={{ fontSize: '1.3rem', lineHeight: '2rem' }}
+    >
       Date
       <ChevronDown className="w-5 h-5 text-gray-500" />
     </button>
 
     {/* Status */}
-    <button className="flex items-center gap-2 px-4 py-2 border bg-white text-base font-medium shadow-sm">
+    <button className="flex items-center gap-2 px-4 py-2 border bg-white text-base font-medium shadow-sm"
+    style={{ fontSize: '1.3rem', lineHeight: '2rem' }}
+    >
       Status
       <ChevronDown className="w-5 h-5 text-gray-500" />
     </button>
