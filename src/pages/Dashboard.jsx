@@ -23,8 +23,8 @@ export default function Dashboard() {
     <div className="flex items-center gap-3">
       {/* Avatar circular */}
       <div
-        className="rounded-full bg-gray-200 flex items-center justify-center overflow-hidden"
-        style={{ width: '3rem', height: '3rem' }}
+        className="rounded-full flex items-center justify-center overflow-hidden"
+        style={{ width: '3rem', height: '3rem', backgroundColor: 'white' }}
       >
         <Settings className="w-7 h-7 text-gray-600" />
       </div>
