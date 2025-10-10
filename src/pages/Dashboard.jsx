@@ -217,50 +217,64 @@ export default function Dashboard() {
 </div>
 
 
-        {/* Campaign List */}
-        <div className="space-y-2 px-4 mt-2">
-          {/* Campaign Item */}
-          <div className="bg-white shadow rounded-lg p-3 relative">
-            <div className="flex justify-between items-start">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-gray-200 rounded overflow-hidden">
-                  <img src="https://via.placeholder.com/40" alt="campaign" />
-                </div>
-                <div>
-                  <h3 className="font-semibold">Nikh</h3>
-                  <p className="text-sm text-gray-500">Active • Engagement</p>
-                </div>
-              </div>
-              <MoreVertical className="w-5 h-5 text-gray-500" />
-            </div>
-            <div className="flex justify-between mt-3">
-              {/* Column 1 */}
-              <div className="flex flex-col items-center flex-1">
-                <p className="font-bold">56</p>
-                <p className="text-sm text-gray-500">Website Subscribes</p>
-              </div>
-
-              {/* Vertical line between 1 and 2 */}
-              <div className="border-l border-gray-300 mx-4"></div>
-
-              {/* Column 2 */}
-              <div className="flex flex-col items-center flex-1">
-                <p className="font-bold">₹11.82</p>
-                <p className="text-sm text-gray-500">Cost per Website Subscribe</p>
-              </div>
-
-              {/* Vertical line between 2 and 3 */}
-              <div className="border-l border-gray-300 mx-4"></div>
-
-              {/* Column 3 */}
-              <div className="flex flex-col items-center flex-1">
-                <p className="font-bold">₹662.14</p>
-                <p className="text-sm text-gray-500">Spent</p>
-              </div>
-            </div>
-
-          </div>
+{/* Campaign List */}
+<div className="space-y-3 px-4 mt-3">
+  {/* Campaign Item */}
+  <div
+    className="bg-white shadow-md p-5 relative rounded-xl hover:shadow-lg transition-all"
+    style={{
+      border: '1px solid #E5E7EB',
+    }}
+  >
+    <div className="flex justify-between items-start">
+      {/* Left: Avatar + Info */}
+      <div className="flex items-center gap-3">
+        <div className="w-12 h-12 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
+          <img
+            src="https://via.placeholder.com/60"
+            alt="campaign"
+            className="object-cover w-full h-full"
+          />
         </div>
+        <div>
+          <h3 className="font-bold text-xl leading-tight">Nikh</h3>
+          <p className="text-base text-gray-500">Active • Engagement</p>
+        </div>
+      </div>
+
+      {/* Right: Menu Icon */}
+      <MoreVertical className="w-6 h-6 text-gray-500" />
+    </div>
+
+    {/* Stats Section */}
+    <div className="flex justify-between mt-5">
+      {/* Column 1 */}
+      <div className="flex flex-col items-center flex-1">
+        <p className="font-bold text-xl">56</p>
+        <p className="text-base text-gray-500">Website Subscribes</p>
+      </div>
+
+      {/* Divider */}
+      <div className="border-l border-gray-300 mx-6"></div>
+
+      {/* Column 2 */}
+      <div className="flex flex-col items-center flex-1">
+        <p className="font-bold text-xl">₹11.82</p>
+        <p className="text-base text-gray-500 text-center">Cost per Website Subscribe</p>
+      </div>
+
+      {/* Divider */}
+      <div className="border-l border-gray-300 mx-6"></div>
+
+      {/* Column 3 */}
+      <div className="flex flex-col items-center flex-1">
+        <p className="font-bold text-xl">₹662.14</p>
+        <p className="text-base text-gray-500">Spent</p>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
 
     </div>
