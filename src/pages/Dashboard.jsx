@@ -22,8 +22,10 @@ export default function Dashboard() {
           {/* left: avatar + name */}
           <div className="flex items-center gap-3">
             {/* avatar circular */}
-            <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
-              <Settings className="w-6 h-6 text-gray-600" style={{ width: '2rem', height: '2rem' }} />
+            <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden"
+            style={{ width: '2.5rem', height: '2.5rem' }}
+            >
+              <Settings className="w-6 h-6 text-gray-600" />
             </div>
 
             {/* name + subtitle */}
