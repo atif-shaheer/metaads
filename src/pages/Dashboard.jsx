@@ -221,7 +221,7 @@ export default function Dashboard() {
 <div className="space-y-3 px-4 mt-3">
   {/* Campaign Item */}
   <div
-    className="bg-white shadow-md p-5 relative rounded-xl hover:shadow-lg transition-all"
+    className="bg-white shadow-md p-5 relative hover:shadow-lg transition-all"
     style={{
       border: '1px solid #E5E7EB',
     }}
