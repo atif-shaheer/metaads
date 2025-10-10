@@ -16,81 +16,95 @@ export default function Dashboard() {
     }}
     >
 
-      {/* Account Info (Transparent Fixed Header) */}
-      <div className="fixed top-0 left-0 right-0 px-4 pt-4 pb-2 z-20 pointer-events-none backdrop-blur-md bg-white/40">
-        <div className="flex items-start justify-between pointer-events-auto">
-          {/* left: avatar + name */}
-          <div className="flex items-center gap-3">
-            {/* avatar circular */}
-            <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden"
-            style={{ width: '2.5rem', height: '2.5rem' }}
-            >
-              <Settings className="w-6 h-6 text-gray-600" />
-            </div>
+{/* Account Info (Transparent Fixed Header) */}
+<div className="fixed top-0 left-0 right-0 px-4 pt-4 pb-2 z-20 pointer-events-none backdrop-blur-md bg-white/40">
+  <div className="flex items-start justify-between pointer-events-auto">
+    {/* Left: Avatar + Name */}
+    <div className="flex items-center gap-3">
+      {/* Avatar circular */}
+      <div
+        className="rounded-full bg-gray-200 flex items-center justify-center overflow-hidden"
+        style={{ width: '3rem', height: '3rem' }}
+      >
+        <Settings className="w-7 h-7 text-gray-600" />
+      </div>
 
-            {/* name + subtitle */}
-            <div>
-              <div className="flex items-center gap-2">
-                <h2 className="text-2xl font-semibold leading-5" style={{ fontSize: '2rem' }}>badshah dubai</h2>
-                <ChevronDown className="w-4 h-4 text-gray-500" />
-              </div>
+      {/* Name + subtitle */}
+      <div>
+        <div className="flex items-center gap-2">
+          <h2 className="font-semibold leading-5" style={{ fontSize: '1.8rem' }}>
+            badshah dubai
+          </h2>
+          <ChevronDown className="w-5 h-5 text-gray-500" />
+        </div>
 
-              <div className="flex items-center gap-2 mt-1">
-                {/* small red status dot */}
-                <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />
-                <p className="text-sm text-gray-500">9 active campaign</p>
-              </div>
-            </div>
-          </div>
-
-          {/* right: bell + plus */}
-          <div className="flex items-center gap-3">
-            <div className="relative">
-              <Bell className="w-6 h-6 text-gray-700" style={{ width: '2rem', height: '2rem' }} />
-              {/* red notification badge */}
-              <span className="absolute -top-1 -right-2 bg-red-600 text-white text-xs font-semibold rounded-full px-1 leading-none">
-                8
-              </span>
-            </div>
-
-            <button
-              onClick={() => setShowModal(true)}
-              className="w-10 h-10 rounded-full bg-green-800 flex items-center justify-center shadow-md" style={{ width: '2.5rem', height: '2.5rem' }}>
-              <Plus className="w-5 h-5 text-white" />
-            </button>
-          </div>
+        <div className="flex items-center gap-2 mt-1">
+          <span className="w-2.5 h-2.5 rounded-full bg-green-500 inline-block" />
+          <p className="text-sm text-gray-500">9 active campaign</p>
         </div>
       </div>
+    </div>
+
+    {/* Right: Bell + Plus */}
+    <div className="flex items-center gap-3">
+      <div className="relative">
+        <Bell className="text-gray-700" style={{ width: '2.2rem', height: '2.2rem' }} />
+        <span className="absolute -top-1 -right-2 bg-red-600 text-white text-xs font-semibold rounded-full px-1 leading-none">
+          8
+        </span>
+      </div>
+
+      <button
+        onClick={() => setShowModal(true)}
+        className="rounded-full bg-green-800 flex items-center justify-center shadow-md"
+        style={{ width: '2.8rem', height: '2.8rem' }}
+      >
+        <Plus className="w-6 h-6 text-white" />
+      </button>
+    </div>
+  </div>
+
+  {/* Filters */}
+  <div className="flex gap-3 px-1 mt-3">
+    {/* Filter button */}
+    <button className="flex items-center gap-2 px-4 py-2 border rounded-lg bg-white text-base font-medium shadow-sm">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-5 h-5 text-gray-600"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M4 6h16M4 12h10m-6 6h16"
+        />
+      </svg>
+    </button>
+
+    {/* Date */}
+    <button className="flex items-center gap-2 px-4 py-2 border rounded-lg bg-white text-base font-medium shadow-sm">
+      Date
+      <ChevronDown className="w-5 h-5 text-gray-500" />
+    </button>
+
+    {/* Status */}
+    <button className="flex items-center gap-2 px-4 py-2 border rounded-lg bg-white text-base font-medium shadow-sm">
+      Status
+      <ChevronDown className="w-5 h-5 text-gray-500" />
+    </button>
+  </div>
+</div>
+
           {/* Modal */}
           <AddCampaignModal
             isOpen={showModal}
             onClose={() => setShowModal(false)}
           />
       {/* Content wrapper (add padding-top to avoid overlap with fixed header) */}
-      <div className="pt-20">
-        {/* Filters */}
-        <div className="flex gap-2 px-4 mt-2">
-          {/* Filter button */}
-          <button className="flex items-center gap-2 px-3 py-1.5 border rounded bg-white text-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h10m-6 6h16" />
-            </svg>
-          </button>
-
-          {/* Date */}
-          <button className="flex items-center gap-2 px-3 py-1.5 border rounded bg-white text-sm">
-            Date
-            <ChevronDown className="w-4 h-4 text-gray-500" />
-          </button>
-
-          {/* Status */}
-          <button className="flex items-center gap-2 px-3 py-1.5 border rounded bg-white text-sm">
-            Status
-            <ChevronDown className="w-4 h-4 text-gray-500" />
-          </button>
-        </div>
-
-
+      <div style={{ paddingTop: '8.5rem' }}>
         {/* Spending Info */}
         <div className="px-4 py-3 mt-5 bg-white shadow rounded-lg" style={{ border: '1px solid #E5E7EB', marginLeft: '16px', marginRight: '16px', borderRadius: '0rem' }}>
           <div className="flex justify-between items-start">
