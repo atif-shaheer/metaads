@@ -239,7 +239,7 @@ export default function Dashboard() {
                 </div>
                 <div>
                   <h3 className="font-bold text-xl leading-tight">Nikh</h3>
-                  <p className="text-base text-gray-500">Active • Engagement</p>
+                  <p className="text-base text-gray-500"><span style={{ color: 'green', fontWeight: 'bold' }}>Active</span> • Engagement</p>
                 </div>
               </div>
 
