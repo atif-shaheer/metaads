@@ -112,7 +112,10 @@ export default function Dashboard() {
       {/* Content wrapper (add padding-top to avoid overlap with fixed header) */}
       <div style={{ paddingTop: '8.5rem' }}>
         {/* Spending Info */}
-        <div className="px-4 py-3 mt-5 bg-white shadow rounded-lg" style={{ border: '1px solid #E5E7EB', marginLeft: '16px', marginRight: '16px', borderRadius: '0rem' }}>
+        <div className="px-4 mt-5 bg-white shadow rounded-lg" 
+        style={{ border: '1px solid #E5E7EB', marginLeft: '16px', marginRight: '16px', borderRadius: '0rem', 
+          paddingTop: '1rem', paddingBottom: '1rem'
+         }}>
           <div className="flex justify-between items-start">
             {/* Left */}
             <div>
