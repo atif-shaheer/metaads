@@ -196,14 +196,26 @@ export default function Dashboard() {
 
         </div>
 
-        {/* Campaigns */}
-        <div className="px-4 py-3 mt-2 flex items-center justify-between">
-          <h2 className="text-lg font-semibold">Campaigns</h2>
-          <div className="flex gap-3">
-            <Search className="w-5 h-5 text-gray-600" />
-            <Grid className="w-5 h-5 text-gray-600" />
-          </div>
-        </div>
+{/* Campaigns */}
+<div className="px-4 py-3 mt-2 flex items-center justify-between">
+  {/* Left Section: Title + Vertical Arrow */}
+  <div className="flex items-center gap-2">
+    <h2 className="font-bold text-2xl">Campaigns</h2>
+    {/* Vertical bidirectional arrow (up and down) */}
+    <div className="flex flex-col items-center justify-center ml-1">
+      <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 5l4 4H8l4-4zM12 19l-4-4h8l-4 4z" />
+      </svg>
+    </div>
+  </div>
+
+  {/* Right Section: Icons */}
+  <div className="flex gap-4">
+    <Search className="w-6 h-6 text-gray-700" />
+    <Grid className="w-6 h-6 text-gray-700" />
+  </div>
+</div>
+
 
         {/* Campaign List */}
         <div className="space-y-2 px-4 mt-2">
